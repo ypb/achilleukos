@@ -1,0 +1,55 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH ACHILLES 1 "May 31, 2001"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+achilles \- OpenGL simulation of artificial life and evolution
+.SH SYNOPSIS
+.B achilles [-x
+.I <num of blocks in x axis>
+.B ] [-z
+.I <num of blocks in z axis>
+.B ] [-f
+.I <num of initial foods>
+.B ] [
+.I <num of initial creatures>
+.B ] [-v] [-h]
+.SH DESCRIPTION
+This manual page documents briefly the
+.B achilles
+commands.  It is an artificial evolution simulation based on Hebbian
+neural networks and ideas set forth in Larry Yaeger's PolyWorld.
+Run the
+.B achilles -h
+command to find out the default values for the options.
+.SH OPTIONS
+.IP "-x <num of blocks in the x axis>"
+How big the world should be, along the x axis.
+.IP "-z <num of blocks in the z axis>"
+How big the world should be, along the z axis.
+.IP "-f <num of initial foods>"
+How many food items there should be at the start.
+.IP "<num of initial creatures>"
+How many creatures the world should start off with.
+.IP "-v"
+Output the version number.
+.IP "-h"
+Output a help text.
+.SH AUTHOR
+Matthew Danish <mdanish@andrew.cmu.edu>
+.SH "SEE ALSO"
+/usr/share/doc/achilles/README
+

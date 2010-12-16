@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include"vector.h"
 #include"defines.h"
 #include<stdio.h>
-#include<iostream.h>
+#include<iostream>
 
 EnergyClass::EnergyClass() :
   food(0),
@@ -89,8 +89,8 @@ double EnergyClass::Regen(double meta) {
 
 bool EnergyClass::EatFood(double f) {
   food+=f;
-  if(f>fcap) f=fcap;
-  if(f<0) f=0;
+  if(food>fcap) food=fcap;
+  if(food<0) food=0;
   return true;
 }
 

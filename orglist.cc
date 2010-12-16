@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 */
 using namespace std;
-#include<iostream.h>
+#include<iostream>
 #include"orglist.h"
 #include"id.h"
 #include"org.h"

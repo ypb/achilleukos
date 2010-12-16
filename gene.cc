@@ -24,6 +24,7 @@ using namespace std;
 #include"braininfo.h"
 #include"defines.h"
 #include<stdio.h>
+#include<cstdlib>
 
 GeneClass::GeneClass() { // randomly generate one
   int i;

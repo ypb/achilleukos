@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // Hebbian neural network simulator
 // This is a stand-alone class btw :)
 using namespace std;
-#include<iostream.h>
+#include<iostream>
 #include<time.h>
 #include<stdlib.h>
 #include<string.h>
@@ -118,20 +118,20 @@ float NeuralNet::RunNeurode(int n) {
   }
   return sum;
 }
-#define E 2.7182818285
 
 // lc is the Hebbian learning constant
 // alpha is a logistic coefficient.  seems to work best when <0
 
 int NeuralNet::Learn(float lc,float alpha) {
   int i,j;
+  const double E = 2.7182818285;
   for(i=0;i<num_inner;i++) {
     if(i<num_per_layer) {
       for(j=0;j<inner[i].num_inputs;j++)
-	inner[i].weights[j]+=lc*(1/(1+pow(E,-alpha*inner[i].output))-0.5)*(input[inner[i].inputs[j]]-0.5); // Yaeger's model
+	inner[i].weights[j]+=lc*(1/(1+pow(E,double(-alpha*inner[i].output)))-0.5)*(input[inner[i].inputs[j]]-0.5); // Yaeger's model
     } else {
       for(j=0;j<inner[i].num_inputs;j++)
-	inner[i].weights[j]+=lc*(1/(1+pow(E,-alpha*inner[i].output))-0.5)*(inner[i-num_per_layer+inner[i].inputs[j]].output-0.5); // Yaeger's model
+	inner[i].weights[j]+=lc*(1/(1+pow(E,double(-alpha*inner[i].output)))-0.5)*(inner[i-num_per_layer+inner[i].inputs[j]].output-0.5); // Yaeger's model
       
     }
   }

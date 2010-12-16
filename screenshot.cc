@@ -85,7 +85,7 @@ bool PNGScreenShot(char *filename) {
   png_write_info(png_ptr, info_ptr);
 
   /* get pointers */
-  row_pointers = (png_byte**) new (png_byte*)[height];
+  row_pointers = (png_byte**) new png_byte*[height];
   for(i = 0; i < height; i++)
     row_pointers[i] = data + (height - i - 1) 
       * 3 * width;

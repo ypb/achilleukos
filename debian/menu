@@ -1,0 +1,5 @@
+?package(achilles):\
+ needs="x11"\
+ section="Games/Simulation"\
+ title="Achilles"\
+ command="achilles"

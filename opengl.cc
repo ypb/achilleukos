@@ -23,7 +23,7 @@ using namespace std;
 #include<GL/glu.h>
 //#include<SDL/SDL.h>
 #include<math.h>
-#include<iostream.h>
+#include<iostream>
 #include"org.h"
 #include"vector.h"
 #include"gene.h"

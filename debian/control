@@ -1,0 +1,14 @@
+Source: achilles
+Section: science
+Priority: optional
+Maintainer: Manfred Lichtenstern <manfred@lichtenstern.biz>
+Build-Depends: debhelper (>= 5), autotools-dev, libsdl1.2-dev, libpng12-dev
+Standards-Version: 3.7.2
+
+Package: achilles
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: An artificial life and evolution simulator
+ Achilles is an artificial life and evolution simulator that uses Hebbian
+ neural networks and OpenGL/SDL to simulate life in a simplified environment.
+ It is based on Larry Yaeger's PolyWorld.

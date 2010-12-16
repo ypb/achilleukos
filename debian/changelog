@@ -1,0 +1,160 @@
+achilles (2-8) unstable; urgency=low
+
+  * New Maintainer. (Closes: #361167)
+  * Added patch from Martin Michlmayr <tbm@cyrius.com> to add missing include
+    required to build with GCC 4.3 (Closes: #417066).
+  * debian/copyright: Update.
+  * debian/watch: Remove.
+
+ -- Manfred Lichtenstern <manfred@lichtenstern.biz>  Tue,  3 Apr 2007 18:56:00 +0200
+
+achilles (2-7) unstable; urgency=low
+
+  * QA upload.
+  * Correct programing error in EnergyClass.cc. (Closes: #397424)
+
+ -- Mohammed Adnène Trojette <adn+deb@diwi.org>  Fri, 12 Jan 2007 02:59:59 +0100
+
+achilles (2-6) unstable; urgency=low
+
+  * QA Upload
+  * Add .desktop file and icon from ubuntu patch (Closes: #368957)
+  * Conforms with new Standards Version.
+
+ -- Michael Ablassmeier <abi@debian.org>  Mon, 29 May 2006 10:07:55 +0200
+
+achilles (2-5) unstable; urgency=low
+
+  * QA upload.
+  * Package is orphaned (#361167); set maintainer to Debian QA Group.
+  * Acknowledge NMUs.  Closes: #258481, #336370.
+  * Build depend on libpng12-dev instead of libpng3-dev.
+  * Remove redundant build dependencies on xlibmesa-gl, xlibmesa-gl-dev,
+    xlibs, zlib1g-dev.
+  * Automatically update config.sub and config.guess from autotools-dev.
+  * Switch to debhelper 5.
+  * debian/changelog: Remove obsolete Emacs local variables.
+  * debian/rules: Add support for DEB_BUILD_OPTIONS=noopt.
+  * debian/watch: Add.
+  * Conforms to Standards version 3.6.2.
+
+ -- Matej Vela <vela@debian.org>  Tue, 25 Apr 2006 13:15:24 +0200
+
+achilles (2-4.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Build-Depend on xlibmesa-gl and -dev (Closes: #336370).
+
+ -- Christoph Berg <myon@debian.org>  Sat, 29 Oct 2005 22:34:48 +0200
+
+achilles (2-4.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Apply patch by Andreas Jochens to fix FTBFS with GCC 3.4 and
+    4.0.  Array bounds are not allowed after a type-id in
+    parentheses (Closes: #258481).
+
+ -- Christoph Berg <myon@debian.org>  Sat, 29 Oct 2005 12:33:40 +0200
+
+achilles (2-4) unstable; urgency=low
+
+  * Change maintainer address.
+  * Recompile for new g++ (Closes: #221382)
+  * Tracking the wild and crazy ``progress'' of C++: iostream.h -> iostream.
+  * Missed a ``using namespace std;'' from a file during the last C++ ``fix''
+  * Updated Standards-Version.
+  * Build-Depend on debhelper (>> 2.0.0).
+  * Fixed typo in menu file.
+
+ -- Matthew Danish <mrd@debian.org>  Thu,  4 Mar 2004 11:00:45 -0500
+
+achilles (2-3) unstable; urgency=low
+
+  * Patch to accomodate g++ 3.2 (curse C++), thanks Jeroen Vermeulen,
+    (Closes: #174918)
+  * Bumped libpng2-dev to libpng3-dev
+  * Added menu entry, (Closes: #172853)
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Thu, 23 Jan 2003 16:02:05 -0500
+
+achilles (2-2) unstable; urgency=low
+
+  * Recompiled against the new Debian libsdl packages. (Closes: #117522)
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Fri,  9 Nov 2001 18:32:39 -0500
+
+achilles (2-1) unstable; urgency=low
+
+  * New upstream release consisting of the following changes:
+  * Re-arranged the AC_CHECK_LIB statements in configure.in so that it
+    may possibly work this time on arm (please!) as well as elsewhere.
+    (Closes: #100393)
+  * I am tired of the stupidities of C++, but I wrote this in C++
+    so I have to pay for it: Added 'using namespace std;' to
+    the beginning of every file that needed it, to allow building
+    with g++ 3.0.  (Closes: #107317)
+    Someday, I'll rewrite this in Common LISP.
+  * A little preventative medicine: updated config.{sub,guess}
+  * Updated Standards-Versions to 3.5.6.0
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Fri,  3 Aug 2001 16:03:58 -0400
+
+achilles (1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed Alpha build bug (Closes: #99398)
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Thu, 31 May 2001 21:45:47 -0400
+
+achilles (0.0.5-8) unstable; urgency=low
+
+  * Updated Standards-Version
+  * Now Build-Depends on libsdl1.2 instead of 1.1
+
+ -- Matthew Danish <mrd@andrew.cmu.edu>  Fri,  4 May 2001 14:09:44 -0500
+
+achilles (0.0.5-7) unstable; urgency=low
+
+  * Fixed Build-Depends, changed to xlibmesa3 | libgl1, and added xlibmesa-dev | libgl-dev (Closes: #95308)
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Thu, 26 Apr 2001 12:31:30 -0400
+
+achilles (0.0.5-6) unstable; urgency=low
+
+  * Changed section from 'misc' to 'science'
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Tue, 24 Apr 2001 16:06:12 -0400
+
+achilles (0.0.5-5) unstable; urgency=low
+
+  * Initial upload of package (Closes: #81693)
+  * Updated Standards Version
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Tue, 24 Apr 2001 16:05:59 -0400
+
+achilles (0.0.5-4) unstable; urgency=low
+
+  * Fixed Build-Depends, removed libc6-dev, libstdc++2.10-dev
+  * Eliminated dh_suidregister from rules
+  * Updated Standards Version
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Sat, 24 Feb 2001 19:18:10 -0500
+
+achilles (0.0.5-3) unstable; urgency=low
+
+  * Added proper Build-Depends
+  * Fixed small errors in man file
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Thu, 22 Feb 2001 00:07:46 -0500
+
+achilles (0.0.5-2) unstable; urgency=low
+
+  * Bugfixes in package
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Fri, 16 Feb 2001 18:22:35 -0500
+
+achilles (0.0.5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Matthew Danish <mdanish@andrew.cmu.edu>  Mon,  8 Jan 2001 22:27:14 -0500

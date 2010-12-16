@@ -1,4 +1,5 @@
-#include<iostream.h>
+using namespace std;
+#include<iostream>
 #include"defines.h"
 
 bool ShowLicense() {
