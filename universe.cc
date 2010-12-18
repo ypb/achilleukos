@@ -97,6 +97,7 @@ UniverseClass::~UniverseClass() {
 
 bool UniverseClass::MainLoop() {
   OrganismClass *o;
+  int total_org = NUM_ORGANISMS + NUM_FOOD;
   int i;
 
   IdToken *token;
@@ -108,7 +109,7 @@ bool UniverseClass::MainLoop() {
    * This section creates the initial organisms and food
    */
 
-  for(i=0;i<NUM_ORGANISMS + NUM_FOOD;i++) {
+  for(i = 0; i < total_org; i++) {
     // Each Organism is represented by a unique Id
     token = idserver->GetToken();
     
