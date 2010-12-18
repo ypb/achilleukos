@@ -213,9 +213,9 @@ bool UniverseClass::Update() {
   }
 
   int i;
-  for(i=0;i<(signed int)livelist.size();i++) {
-    if(livelist[i]->Type()==ORGANISM_LIVE) {
-      UpdateOrganism(livelist[i],foodlist,livelist.size());
+  for(i = 0; i < (signed int) livelist.size(); i++) {
+    if(livelist[i]->Type() == ORGANISM_LIVE) {
+      UpdateOrganism(livelist[i], foodlist, livelist.size());
 
       livelist[i]->Lifetick();
     }
@@ -361,7 +361,7 @@ bool UniverseClass::UpdateOrganism(OrganismClass *o,vector<OrganismClass *> food
   
   // Find out if this organism is near to any food, and whether or not
   // it needs that food
-  for(i=0;i<(signed int)foodlist.size();i++) {
+  for(i = 0; i < (signed int) foodlist.size(); i++) {
     if(o->Energy().Food() != o->Energy().FoodCap()) {  
       if(foodlist[i]) {
 	distv=foodlist[i]->Pos() - o->Pos();
