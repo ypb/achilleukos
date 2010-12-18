@@ -1,6 +1,6 @@
 /* 
 
-Copyright (C) 2000 Matthew Danish
+Copyright (C) 2000, 2010 Matthew Danish, Michal Kowalski
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
