@@ -1,0 +1,10 @@
+/.deps/
+/*.o
+/achilles
+/Makefile
+/Makefile~
+/config.cache
+/config.h
+/config.log
+/config.status
+/stamp-h
