@@ -1,0 +1,18 @@
+
+main.cc			UniverseClass -> MainLoop
+universe.cc		MainLoop, ogl = OpenGLClass, Update, UpdateDraw, 
+
+# move UpdateOrganism from universe to organism... since it passes in organism* ?
+# still it uses orglist which is a member of universe class...
+
+DEBUGS:
+  _DEBUG			energy, gene, opengl, universe
+  _NN_DEBUG			universe
+  _DEBUG_FOOD		universe
+  _DEBUG_FIGHT		universe
+
+in Makefile: _NN_DEBUG getchars... grrrr....
+DEFS = -DHAVE_CONFIG_H -I. -I$(srcdir) -I. -D_DEBUG -D_NN_DEBUG -D_DEBUG_FOOD -D_DEBUG_FIGHT
+
+!TOFIX: eating... iterates over whole foodlist but checks if org hungry... well, hmmm... breaks, ok
+

@@ -1,0 +1,21 @@
+
+to .gitignore or not?
+
+extended .git/info/exclude with:
+#       /GPATH
+#       /GRTAGS
+#       /GTAGS
+#       /ID
+#       /TAGS
+i.e. only at top level
+
+and moved it to ~/.gitinfoexclude per ~/.gitconfig core.excludesfile
+added:
+#       /*.o
+#       /.deps/
+hmmm... this should probably go into .gitignore along with ./configure temps...
+
+---
+
+git-status -sbu
+
