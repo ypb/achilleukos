@@ -1,0 +1,17 @@
+
+Porting Achilles (http://achilles.sourceforge.net/ or rather
+http://packages.debian.org/achilles), an artificial life and evolution
+simulator that uses Hebbian neural networks and OpenGL/SDL to simulate life
+in a simplified environment (it is based on Larry Yaeger's PolyWorld idea) to
+libtcod (http://doryen.eptalys.net/libtcod/) with an ultimate goal of having,
+if not NPCs, at least interesting mobs in a god rogue-like, city-builder, colo-
+nization-like game.
+
+There are of course more robust and advanced projects like OpenNERO (with its
+rtNEAT engine) or mentioned above PolyWorld, but I find this forgotten univer-
+sity semester job to be a nice trampoline for my own devious ends, Larry W.
+said laziness is one of programmers virtues. Still if anything becomes of this
+effort there is always a possibility of enfolding other AIlife libs and ideas
+into this experiment and forking it into a rogueAlIc (rogue artificial little
+intelligence creatures or "rogalik" - a croissant in Polish ;)
+
