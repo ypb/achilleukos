@@ -14,5 +14,18 @@ DEBUGS:
 in Makefile: _NN_DEBUG getchars... grrrr....
 DEFS = -DHAVE_CONFIG_H -I. -I$(srcdir) -I. -D_DEBUG -D_NN_DEBUG -D_DEBUG_FOOD -D_DEBUG_FIGHT
 
-!TOFIX: eating... iterates over whole foodlist but checks if org hungry... well, hmmm... breaks, ok
+!TOFIX: eating... iterates over whole foodlist but checks if org hungry... well, hmmm... breaks, OK
+
+---
+
+question of name... since github mirror required some label:
+not sure why it was called achilles in the first place, but...
+achilles had a son neoptolemos (or -mus) or pyrrhus (yeah, epir claimed to be
+descendants of achilles... whateva...), but...
+after his death there was a small island on the black sea (near the mouth of
+danube river) dedicated to his worship, by sea merchants and the like rabble,
+filled with wild, sacrificial animals and birds - called Leukos (white island,
+koz of marble deposits) or achilleis (island of achilles) or Leuce (in
+engrish?)... latinized into Achillea (but this is a name of popular plant),
+so i went with googlicious word-smithy of achilleukos... THE END (for now!)
 
